@@ -1,0 +1,26 @@
+{
+	"info": {
+		"_postman_id": "37d81867-e7fe-4f4a-9a0b-2ee11dce3977",
+		"name": "baston",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24978939"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
