@@ -8,9 +8,30 @@
 	"item": [
 		{
 			"name": "New Request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"status code 200\", function(){",
+							"    pm.response.to.have.status(200);",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "https://google.com",
+					"protocol": "https",
+					"host": [
+						"google",
+						"com"
+					]
+				}
 			},
 			"response": []
 		},
@@ -18,7 +39,30 @@
 			"name": "New Request",
 			"request": {
 				"method": "POST",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "https://public.requestbin.com/r/en7wu6j505p6p/2WhBYKzJQ8iMGWhGYzqE8UyWTv1/sample/post/request?testbody=1",
+					"protocol": "https",
+					"host": [
+						"public",
+						"requestbin",
+						"com"
+					],
+					"path": [
+						"r",
+						"en7wu6j505p6p",
+						"2WhBYKzJQ8iMGWhGYzqE8UyWTv1",
+						"sample",
+						"post",
+						"request"
+					],
+					"query": [
+						{
+							"key": "testbody",
+							"value": "1"
+						}
+					]
+				}
 			},
 			"response": []
 		}
